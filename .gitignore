@@ -1,7 +1,29 @@
-# Folder view configuration files
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment files
+*.local
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS files
 .DS_Store
 Desktop.ini
-
-# Thumbnail cache files
 ._*
 Thumbs.db
+
+# Cache
+.cache/
+*.tsbuildinfo
