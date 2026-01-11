@@ -1,13 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miguel Coleto Muñoz - Senior Fullstack Engineer</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miguel Coleto Muñoz - Senior Fullstack Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#2b9bcf',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-white text-black">
+  <!-- Header -->
+  <header class="flex flex-col items-center text-center px-6 py-12 bg-accent text-white">
+    <img
+      src="face-image.jpg"
+      alt="Miguel Coleto Muñoz"
+      class="w-40 h-40 rounded-full object-cover mb-6 border-4 border-white"
+    >
+    <h1 class="text-4xl font-bold mb-2">Miguel Coleto Muñoz</h1>
+    <h2 class="text-xl">Senior Fullstack & Founding Engineer</h2>
+    <p class="text-lg mt-1 text-white/80">Scaling Products from Idea to 500k+ MAUs</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Professional Summary -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-accent mb-6">Professional Summary</h2>
+      <div class="space-y-4 text-gray-800 leading-relaxed">
+        <p>
+          My career is defined by the capacity to act as a
+          <strong class="text-accent">Founding Engineer</strong>: the individual who
+          builds the core system from scratch and makes it scalable. With 9+ years of
+          experience, I have navigated the complexity of creating hybrid technology
+          ecosystems, combining the high performance of native mobile development
+          (Android, iOS) with the versatility of advanced web platforms (Next.js, React).
+        </p>
+        <p>
+          My specialty lies in
+          <strong class="text-accent">Cross-Platform Architecture and Convergence</strong>.
+          I have led implementations of
+          <strong class="text-accent">Kotlin Multiplatform (KMP)</strong> to maximize
+          shared logic and reduce technical debt. My focus is not just writing clean code,
+          but designing modular architectures that support exponential growth (up to 500k
+          Monthly Active Users) and facilitate investment rounds, such as the
+          <strong class="text-accent">$3.4M Seed Round</strong> we secured at Tacter.
+        </p>
+        <blockquote class="border-l-4 border-accent pl-4 italic text-gray-600 my-6">
+          My Mission: To translate the business vision into robust and profitable technical solutions.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-accent mb-6">Technology Stack</h2>
+      <p class="text-gray-600 mb-6">
+        My expertise is built on a comprehensive command of the stack, from
+        architectural design (Clean Architecture, Modularization) to end-to-end
+        frontend and backend implementation.
+      </p>
+      <div class="space-y-6">
+        <div class="border-l-4 border-accent pl-4">
+          <h3 class="font-bold text-accent">Native Mobile</h3>
+          <p class="text-sm text-gray-500 mb-1">Kotlin, Jetpack Compose, KMP, Swift, SwiftUI</p>
+          <p class="text-gray-700">Leadership in high-performance native development. Implementation of KMP for shared business logic and mastery of declarative UIs (Compose and SwiftUI).</p>
+        </div>
+        <div class="border-l-4 border-accent pl-4">
+          <h3 class="font-bold text-accent">Web & Frontend</h3>
+          <p class="text-sm text-gray-500 mb-1">React, Next.js, TypeScript, Tailwind</p>
+          <p class="text-gray-700">Designing state-of-the-art web platforms with Next.js for SEO and performance, ensuring seamless synchronization with mobile clients.</p>
+        </div>
+        <div class="border-l-4 border-accent pl-4">
+          <h3 class="font-bold text-accent">Backend & Data</h3>
+          <p class="text-sm text-gray-500 mb-1">Node.js, Python, AWS Serverless, Lambda</p>
+          <p class="text-gray-700">Experience with serverless systems and microservice architectures, with proficiency in Python and Node.js for critical services.</p>
+        </div>
+        <div class="border-l-4 border-accent pl-4">
+          <h3 class="font-bold text-accent">Architecture & DevOps</h3>
+          <p class="text-sm text-gray-500 mb-1">Clean Architecture, Modularization, CI/CD, Git</p>
+          <p class="text-gray-700">Designing architectures that enable team autonomy and improve developer velocity.</p>
+        </div>
+        <div class="border-l-4 border-accent pl-4">
+          <h3 class="font-bold text-accent">Innovation</h3>
+          <p class="text-sm text-gray-500 mb-1">AI Agents, RAG Systems, Web3 Integration</p>
+          <p class="text-gray-700">Exploration and implementation of cutting-edge features to differentiate the product in competitive markets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-accent mb-8">Experience</h2>
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="absolute left-0 top-0 bottom-0 w-0.5 bg-accent"></div>
+
+        <div class="space-y-12">
+          <!-- Tacter -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">Oct 2020 – Present</span>
+            <h3 class="text-xl font-bold text-accent">Founding Engineer</h3>
+            <p class="text-gray-600 mb-3">TACTER</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> To build a coaching and strategy platform for gamers from the ground up, as the first engineering hire. The core challenge was creating a multi-platform ecosystem (Web, Android, iOS) that was highly performant and scalable for a global market.</p>
+              <p><strong class="text-accent">The Impact:</strong> Developing a solid architecture allowed us to scale the product rapidly, achieving the milestone of the $3.4M Seed Round and becoming official Riot Games partners.</p>
+              <div>
+                <strong class="text-accent">Technical Focus:</strong>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li>Advanced Cross-Platform: Architected the mobile platform around Kotlin Multiplatform (KMP) to share the Business Logic and Data Layer across iOS and Android.</li>
+                  <li>Innovation: Participated in the implementation of AI Features (RAG Systems) to offer personalized game recommendations and Web3 gaming integrations.</li>
+                  <li>Fullstack: Development of the landing page and user platform using Next.js and React-Native.</li>
+                  <li>Leadership: Established initial technical hiring processes and mentored junior engineers.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- JEFF -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">Feb 2020 – Oct 2020</span>
+            <h3 class="text-xl font-bold text-accent">Senior Android Engineer</h3>
+            <p class="text-gray-600 mb-3">JEFF</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> Integrating multiple business verticals (laundry, fitness, etc.) into a single "Super App." This demanded a total architectural refactoring to support growth and the autonomy of multiple development teams.</p>
+              <div>
+                <strong class="text-accent">Technical Focus:</strong>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li>Part of the Core Team that successfully migrated and modularized large segments of the app from Java to Kotlin.</li>
+                  <li>Implemented a Clean Architecture that decoupled teams, allowing for independent feature rollouts without affecting the entire ecosystem.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- VITCORD -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">May 2018 – Dec 2019</span>
+            <h3 class="text-xl font-bold text-accent">Android Architect</h3>
+            <p class="text-gray-600 mb-3">VITCORD</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> Redesigning the core architecture of a video content social network looking to scale rapidly.</p>
+              <p><strong class="text-accent">The Impact:</strong> Lead architect responsible for the new Android app in Kotlin, contributing to a platform that reached 500k MAUs and facilitated the securing of $3M across funding rounds.</p>
+            </div>
+          </div>
+
+          <!-- COME -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">Nov 2016 – May 2018</span>
+            <h3 class="text-xl font-bold text-accent">Co-Founder & Full-Stack Developer</h3>
+            <p class="text-gray-600 mb-3">COME</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> Co-founded a project to build a complete ecosystem for restaurants.</p>
+              <p><strong class="text-accent">The Impact:</strong> Winners of IDEAS Institute 2k17.</p>
+              <div>
+                <strong class="text-accent">Technical Focus:</strong>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li>Led development across the full stack: Kotlin (Android), React (Web), and Node.js (Backend).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLEASOUND -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">Jul 2017 – May 2018</span>
+            <h3 class="text-xl font-bold text-accent">Freelance Full-Stack Developer</h3>
+            <p class="text-gray-600 mb-3">PLEASOUND</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> Building serverless backend infrastructure and mobile applications for a music-tech startup.</p>
+              <div>
+                <strong class="text-accent">Technical Focus:</strong>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li>AWS Serverless architecture with Python and Lambda.</li>
+                  <li>iOS application development using Swift and UIKit.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFOPORT -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-1 w-3 h-3 -translate-x-[5px] rounded-full bg-accent"></div>
+            <span class="text-sm font-medium text-accent">Jan 2017 – Jun 2017</span>
+            <h3 class="text-xl font-bold text-accent">Full-Stack Developer Intern</h3>
+            <p class="text-gray-600 mb-3">INFOPORT</p>
+            <div class="space-y-3 text-gray-700">
+              <p><strong class="text-accent">The Challenge:</strong> Maintenance and development of systems for port logistics.</p>
+              <div>
+                <strong class="text-accent">Technical Focus:</strong>
+                <ul class="list-disc list-inside mt-2 space-y-1">
+                  <li>Worked with Angular, Ionic, and .NET technologies.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
